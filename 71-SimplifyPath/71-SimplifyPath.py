@@ -1,4 +1,4 @@
-# Last updated: 8/7/2026, 10:44:07 AM
+# Last updated: 8/7/2026, 10:44:29 AM
 1class Solution:
 2    """
 3    first, separate the path by '/'. then, check each directory/file name and push into a stack if not
@@ -7,7 +7,7 @@
 6    """
 7    def simplifyPath(self, path: str) -> str:
 8        stack = []
-9        splitpath = path.split('/');
+9        splitpath = path.split('/')
 10        
 11        for item in splitpath:
 12            if item == '' or item == '.':
