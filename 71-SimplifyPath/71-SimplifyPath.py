@@ -1,4 +1,4 @@
-# Last updated: 8/7/2026, 10:44:31 AM
+# Last updated: 8/7/2026, 10:45:51 AM
 1class Solution:
 2    """
 3    first, separate the path by '/'. then, check each directory/file name and push into a stack if not
@@ -15,12 +15,7 @@
 14            elif item == '..':
 15                if len(stack) > 0:
 16                    stack.pop()
-17                    stack.pop()
-18            else:
-19                stack.append('/')
-20                stack.append(item)
-21        
-22        if(len(stack) == 0):
-23            stack.append('/')
-24            
-25        return "".join(stack)
+17            else:
+18                stack.append(item)
+19            
+20        return '/'+ '/'.join(stack)
