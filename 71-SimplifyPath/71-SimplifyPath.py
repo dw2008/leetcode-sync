@@ -1,4 +1,4 @@
-# Last updated: 8/7/2026, 10:44:29 AM
+# Last updated: 8/7/2026, 10:44:31 AM
 1class Solution:
 2    """
 3    first, separate the path by '/'. then, check each directory/file name and push into a stack if not
