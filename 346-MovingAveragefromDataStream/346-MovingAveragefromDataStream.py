@@ -1,4 +1,4 @@
-# Last updated: 8/8/2026, 9:17:10 AM
+# Last updated: 8/8/2026, 9:17:55 AM
 1from collections import deque
 2
 3class MovingAverage:
