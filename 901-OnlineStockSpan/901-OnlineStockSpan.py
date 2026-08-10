@@ -1,4 +1,4 @@
-# Last updated: 8/10/2026, 4:50:41 PM
+# Last updated: 8/10/2026, 4:50:45 PM
 1"""
 2using a monotonically decreasing stack; store elements in a stack with format 
 3[price, answer]. every time next is called, peek at stack[-1][0] and see if it is 
