@@ -1,4 +1,4 @@
-# Last updated: 8/11/2026, 5:45:04 PM
+# Last updated: 8/11/2026, 5:45:18 PM
 1# Definition for a binary tree node.
 2# class TreeNode:
 3#     def __init__(self, val=0, left=None, right=None):
@@ -21,13 +21,12 @@
 20            if not node:
 21                return 0
 22            nonlocal maxdiam
-23            print(node.val)
-24            left = helper(node.left)
-25            right = helper(node.right)
-26            maxdiam = max(maxdiam, left + right)
-27            
-28            return max(left, right) + 1
-29        
-30        helper(root)
-31        return maxdiam
-32            
+23            left = helper(node.left)
+24            right = helper(node.right)
+25            maxdiam = max(maxdiam, left + right)
+26            
+27            return max(left, right) + 1
+28        
+29        helper(root)
+30        return maxdiam
+31            
