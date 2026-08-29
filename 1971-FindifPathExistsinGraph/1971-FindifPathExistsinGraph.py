@@ -1,4 +1,4 @@
-# Last updated: 8/28/2026, 8:25:09 PM
+# Last updated: 8/28/2026, 8:25:18 PM
 1from collections import defaultdict
 2
 3class Solution:
@@ -18,7 +18,7 @@
 17            neighbors[edge[1]].append(edge[0])
 18            
 19        stack = list()
-20        stack.append(source);
+20        stack.append(source)
 21        traversed = set()
 22        
 23        while(len(stack) > 0):
