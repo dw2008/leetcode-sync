@@ -1,4 +1,4 @@
-# Last updated: 8/28/2026, 8:24:59 PM
+# Last updated: 8/28/2026, 8:25:09 PM
 1from collections import defaultdict
 2
 3class Solution:
@@ -9,7 +9,7 @@
 8    """
 9    def validPath(self, n: int, edges: List[List[int]], source: int, destination: int) -> bool:
 10        if(source == destination):
-11            return True;
+11            return True
 12
 13        neighbors = defaultdict(list)
 14        
