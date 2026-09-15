@@ -1,4 +1,4 @@
-# Last updated: 9/15/2026, 2:14:47 PM
+# Last updated: 9/15/2026, 2:14:54 PM
 1from collections import deque
 2
 3class Solution:
@@ -14,22 +14,21 @@
 13        curr_q.append(start)
 14        
 15        while(curr_q):
-16            print(curr_q)
-17            while(curr_q):
-18                curr = curr_q.popleft()
-19                if(arr[curr] == 0):
-20                    return True
-21                visited.add(curr)
-22                
-23                if((curr + arr[curr]) not in visited and curr + arr[curr] < len(arr)):
-24                    next_q.append(curr + arr[curr])
-25                    
-26                if((curr - arr[curr]) not in visited and curr - arr[curr] >= 0):
-27                    next_q.append(curr - arr[curr])
-28            
-29            curr_q = next_q
-30            next_q = deque()
-31            
-32        return False
+16            while(curr_q):
+17                curr = curr_q.popleft()
+18                if(arr[curr] == 0):
+19                    return True
+20                visited.add(curr)
+21                
+22                if((curr + arr[curr]) not in visited and curr + arr[curr] < len(arr)):
+23                    next_q.append(curr + arr[curr])
+24                    
+25                if((curr - arr[curr]) not in visited and curr - arr[curr] >= 0):
+26                    next_q.append(curr - arr[curr])
+27            
+28            curr_q = next_q
+29            next_q = deque()
+30            
+31        return False
+32                
 33                
-34                
