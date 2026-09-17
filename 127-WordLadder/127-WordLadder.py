@@ -1,4 +1,4 @@
-# Last updated: 9/16/2026, 7:38:30 PM
+# Last updated: 9/16/2026, 7:38:41 PM
 1from collections import deque
 2
 3class Solution:
