@@ -1,4 +1,4 @@
-# Last updated: 9/25/2026, 4:50:27 PM
+# Last updated: 9/25/2026, 4:52:04 PM
 1from collections import defaultdict
 2
 3class Solution:
@@ -8,19 +8,15 @@
 7    the running sum is greater than or equal to half the array size.
 8    """
 9    def minSetSize(self, arr: list[int]) -> int:
-10        hash1 = defaultdict(int)
-11        for n in arr:
-12            hash1[n] = hash1[n] + 1
-13        
+10        counts = collections.Counter(arr)
+11        counts = [count for number, count in counts.most_common()]
+12        
+13        total_removed = 0
 14        counter = 0
-15        totalSum = 0
-16        hash2 = {k: v for k, v in sorted(hash1.items(), key=lambda item: item[1], reverse=True)}
-17        
-18        for key, value in hash2.items():
-19            totalSum += value
-20            counter += 1
-21            
-22            if(totalSum >= len(arr)/2):
-23                return counter
-24            
-25        return counter
+15        for count in counts:
+16            total_removed += count
+17            counter += 1
+18            if(total_removed >= len(arr)//2):
+19                break
+20        
+21        return counter
