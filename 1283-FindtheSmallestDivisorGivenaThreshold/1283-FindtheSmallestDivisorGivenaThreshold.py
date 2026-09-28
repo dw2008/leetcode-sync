@@ -1,4 +1,4 @@
-# Last updated: 9/28/2026, 6:18:19 PM
+# Last updated: 9/28/2026, 6:18:32 PM
 1class Solution:
 2    """
 3    we can optimize this solution by performing binary search starting from 1 to the maximum element
@@ -21,9 +21,9 @@
 20            
 21            if(total <= threshold):
 22                result = mid
-23                right = mid - 1;
+23                right = mid - 1
 24            
 25            if(total > threshold):
 26                left = mid + 1
 27        
-28        return result;
+28        return result
